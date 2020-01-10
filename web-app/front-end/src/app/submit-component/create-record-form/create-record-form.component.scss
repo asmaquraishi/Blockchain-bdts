@@ -1,0 +1,53 @@
+@import '../../../colors.scss';
+
+:host {
+  height: 100%;
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  background: $active-form-background;
+  color: $primary-text;
+ 
+}
+div {
+  display: flex;
+  justify-content: center;
+  form {
+    display: flex;
+    justify-self: center;
+    flex-direction: row;
+    font-size: 0.9em;
+    margin: 0.5em 2em;
+    .form-group {
+      margin: 0.2em;
+      display: flex;
+      flex-direction: column;
+      label {
+        margin-left: 2em;
+        font-weight: bold;
+      }
+      input {
+        width: 200px;
+        height: 2.8em;
+      }
+    }
+    button {
+      margin-left: 0.5em;
+      margin-top: 1.5em;
+    
+      padding: 0.5em;
+      width: 200px;
+  
+      height: 3.8em;
+      font-size: 1em;
+      border: none;
+      background-color: $button-color;
+      color: $button-text;
+      &:disabled {
+        background-color: $disabled-button;
+        cursor: not-allowed;
+      }
+    }
+  }
+}
+

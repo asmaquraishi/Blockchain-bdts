@@ -1,0 +1,29 @@
+<div class="panel panel-primary" id="result_panel">
+    <div class="panel-heading"><h3 class="panel-title">Donors Records:</h3>
+  
+    </div>
+    <div class="panel-body">
+        <ul class="list-group">
+<table> 
+   
+  <thead>
+  
+    <th>Key</th>
+    <th>NID</th>
+    <th>Blood Type</th>
+    <th>Patient File</th>
+    <th>Hospital Name</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of records">
+      <td>{{item.Key}}</td>
+      <td>{{item.Record.NID}}</td>
+      <td>{{item.Record.BType}}</td>
+      <td>{{item.Record.PFile}}</td>
+      <td>{{item.Record.hospital}}</td>
+    </tr>
+
+  </tbody>
+</table>
+
+        </ul></div></div>  

@@ -1,0 +1,38 @@
+@import '../../colors.scss';
+
+:host {
+  height: 75%;
+  background-color: $background;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 0.5em 2em;
+  width: 80%;
+  padding-top: 4%;
+}
+
+.tabs {
+  button {
+    border: none;
+    font-size: 3em;
+    color: $primary-text;
+    &.activeTab {
+      background-color: $active-form-background;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  // padding: 4%;
+  padding-top: 2%;
+}
+.countNum{
+  font-weight: bold;
+}
+
+.list-group{
+  max-height: 300px;
+  margin-bottom: 10px;
+  overflow:scroll;
+  -webkit-overflow-scrolling: touch;
+}

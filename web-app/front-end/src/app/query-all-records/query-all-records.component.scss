@@ -1,0 +1,65 @@
+@import '../../colors.scss';
+
+:host {
+  height: 50%;
+  width: 100%;
+  background-color: $background;
+  display: flex;
+  flex: 1;
+  // padding-left: -200em;
+  padding-top: 1em;
+ 
+  // margin: 0.5em 4em;
+
+  table {
+    margin: 0.5em 4em;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: left;
+    background-color:rgb(253, 253, 253);
+    border-color: black;
+    border:14px;
+  padding-bottom: 20%;
+
+    thead {
+      display: flex;
+      flex-direction: row;
+      th {
+        flex: 1;
+      }
+    }
+
+    tbody {
+      flex-direction: column;
+      overflow-y: overlay;
+      flex: 1;
+      font-size: 14px;
+      tr {
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        td {
+          flex: 1;
+        }
+      }
+
+    }
+  
+    
+  }
+  .list-group{
+    max-height: 250px;
+    width: 1200px;
+    margin-bottom: 10px;
+    overflow:scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+  h3{
+    margin: 0.5em 1em;
+ 
+  }
+  
+}
+
+

@@ -1,0 +1,9 @@
+{
+    "connection_file": "channel3_bdts_profile.json",
+    "appAdmin": "app-admin",
+    "appAdminSecret": "app-adminpw",
+    "orgMSPID": "org1msp",
+    "caName": "n955204-org1ca.myclusterkub.us-south.containers.appdomain.cloud:7054",
+    "userName": "user_ch3",
+    "gatewayDiscovery": { "enabled": true, "asLocalhost": false }
+}

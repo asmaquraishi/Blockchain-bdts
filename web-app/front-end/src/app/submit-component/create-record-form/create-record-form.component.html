@@ -1,0 +1,22 @@
+<div>
+  <form #f="ngForm" (ngSubmit)="onSubmit(f.value)">
+    <div class="form-group">
+      <label for="NID">National ID</label>
+      <input type="text" class="form-control" name="NID" required ngModel>
+    </div>
+    
+    <div class="form-group">
+      <label for="BType">Blood Type</label>
+      <input type="text" class="form-control" name="BType" required ngModel>
+    </div>
+    <div class="form-group">
+      <label for="PFile">Patient File</label>
+      <input type="text" class="form-control" name="PFile" required ngModel>
+    </div>
+    <div class="form-group">
+      <label for="hospital">Hospital Name</label>
+      <input type="text" class="form-control" name="hospital" required ngModel>
+    </div>
+    <button [disabled]="!f.valid" type="submit" class="btn btn-success">Add Donor</button>
+  </form>
+</div>
